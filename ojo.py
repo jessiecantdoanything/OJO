@@ -1,5 +1,6 @@
 # more strings and text
 
+
 x = "there are %d types of people." % 10
 binary = "binary"
 doNot = "don't"
