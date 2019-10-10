@@ -9,11 +9,12 @@ doNot = "don't"
 # defining y as "those who know %s and those who know %s", the %s will call something to be placed there
 y = "those who know %s and those who know %s" % (binary, doNot)
 
-# this is ?
+# this is calling x
 print(x)
-# this is
+# this is calling y
 print(y)
 
+# this is printing
 print("I said: %r.:" % x)
 print("i also said: '%s'." % y)
 
@@ -50,9 +51,9 @@ print(end7 + end8 + end9 + end10 + end11 + end12)
 # But wait! There's more:
 formatter = "%r %r %r %r"
 print(formatter % (1, 2, 3, 4))
-print(formatter % ("one", "two", "three", "four"))
-print(formatter % (True, False, False, True))
-print(formatter % (formatter, formatter, formatter, formatter))
+print(formatter % ("the", "one", "nine", "nine"))
+print(formatter % (False, False, False, False))
+print(formatter % (wooo, wooo, wooo, wooo))
 
 # why do I use %r instead of %s in the above example?
 
@@ -73,8 +74,9 @@ we'll be able to type as much as we like.
 even 4 lines if we want, or 5, or 6.
 """)
 
-# examine closely the differences between the %r formatter and %s formatter
+# this calls out the months function and lists them out in one line
 print("here are the months: %r" % months)
+# this calls the months and lists them out line by line rather than in just one line
 print("here are the months: %s" % months)
 
 # escape sequences redux
@@ -83,7 +85,7 @@ persianCat = "I'm split\non a line."
 backslashCat = "I'm \\ a \\ cat."
 topCat = """
 # creates a list of things
-I'll do a list:
+i'll do a list:
 \t* litter box chilling
 \t* eating ALL the snacks
 \t* sleeping\n\t* scratches
@@ -118,8 +120,8 @@ print(topCat)
 
 #  Can you use ''' instead of """ ?
 
-question 1 = input("how is your day going? ")
-question 2 = input("")
+question1 = input("how is your day going? ")
+question2 = input("")
 
 print("so, you are feeling %r and %r is  ." % (age, height))
 
