@@ -90,7 +90,7 @@ i'll do a list:
 \t* eating ALL the snacks
 \t* sleeping\n\t* scratches
 """
-# this calls the definitons we made earlier
+# this calls the definitions we made earlier
 print(tabbyCat)
 print(persianCat)
 print(backslashCat)
